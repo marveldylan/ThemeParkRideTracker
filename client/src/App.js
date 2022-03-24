@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import AllRides from "./components/AllRides"
+import RideDetails from "./components/RideDetails"
+import RideReview from "./components/RideReviews"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<AllRides /> } />
+        </Routes>
+      </main>
     </div>
   );
 }
