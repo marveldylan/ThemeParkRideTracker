@@ -9,6 +9,7 @@ const Ride = new Schema(
         description: { type: String, required: true },
         averageWaitTime: { type: Number, required: true },
         currentWaitTime: { type: Number, required: true },
+        status: { type: String, required: true},
         reviews: [{ type: Schema.Types.ObjectId, ref: 'reviews' }]
     },
     { timestamps: true },
