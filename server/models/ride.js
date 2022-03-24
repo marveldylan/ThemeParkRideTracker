@@ -1,5 +1,4 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const { Schema } = require('mongoose')
 
 const Ride = new Schema(
     {
@@ -9,8 +8,9 @@ const Ride = new Schema(
         description: { type: String, required: true },
         averageWaitTime: { type: Number, required: true },
         currentWaitTime: { type: Number, required: true },
+        reviews: [{ type: Schema.Types.ObjectId, ref: 'reviews' }]
     },
     { timestamps: true },
 )
 
-module.exports = mongoose.model('rides', Ride)
+module.exports = Ride
