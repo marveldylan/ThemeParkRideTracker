@@ -44,11 +44,15 @@ const RideDetails = () => {
             <div className="corner"/>
             <div className="details">
                 <img className="ride-image" src={selectedRide.image} alt={selectedRide.name} />
-                <h3 className = "current-wait">Current Wait Time: {selectedRide.currentWaitTime} minutes</h3>
-                <h3 className = "average-wait">Average Wait Time: {selectedRide.averageWaitTime} minutes</h3>
-                <h3 className = "min-height">Minimum Height: {selectedRide.minHeight}"</h3>
-                <h3 className = "ride-type">Ride Type: {selectedRide.type}</h3>
                 <h4 className = "ride-description">{selectedRide.description}</h4>
+                <div className = "add-details">
+                    <h5 className = "current-wait">Current Wait Time: {selectedRide.currentWaitTime} minutes</h5>
+                    <h5 className = "average-wait">Average Wait Time: {selectedRide.averageWaitTime} minutes</h5>
+                </div> 
+                <div>
+                <h5 className = "min-height">Minimum Height: {selectedRide.minHeight}"</h5>
+                    <h5 className = "ride-type">Ride Type: {selectedRide.type}</h5>
+                </div>       
             </div>
             <div className="ride-reviews">
                 <h2>Ride Reviews</h2>
