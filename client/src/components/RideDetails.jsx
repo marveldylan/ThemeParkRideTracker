@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import RideReviews from './RideReviews';
+import WriteReview from './WriteReview';
 
 
 const RideDetails = () => {
@@ -14,18 +15,15 @@ const RideDetails = () => {
 
     const getAllRides = async () => {
         const res = await axios.get('http://localhost:3001/')
-        console.log(res.data.rides)
         setRides(res.data.rides)
 
         updateCurrentRide(res.data.rides);
     }
     const updateCurrentRide = (rides) => {
-        console.log(rides)
         let currentRide = rides.find(
             (ride) => ride._id === id
 
         )
-        console.log(`Current Ride: ${currentRide}`)
         setRide(currentRide)
     }
     
@@ -49,6 +47,7 @@ const RideDetails = () => {
                 <h4 className = "ride-description">{selectedRide.description}</h4>
             </div>
             <div className="ride-reviews">
+                <WriteReview id = {id} rides = {rides} selectedRide = {selectedRide}/>
                 <RideReviews id = {id} rides = {rides} selectedRide = {selectedRide}/>
             </div>
         </div> 

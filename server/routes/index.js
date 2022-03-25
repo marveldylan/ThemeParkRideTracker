@@ -5,7 +5,7 @@ const reviewController = require('../controllers/Controller2.js')
 
 
 router.get('/', rideController.getAllRides)
-router.get('/:id', reviewController.getReviews)
-
+router.get('/reviews/:id', reviewController.getAllReviews)
+router.post('/reviews/:id', reviewController.createReview)
 
 module.exports = router;

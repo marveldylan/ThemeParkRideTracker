@@ -3,33 +3,39 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const RideReviews = (props) => {
-    console.log(props.id)
-    console.log(props.rides)
-    console.log(props.selectedRide)
+
+    const [ reviews, setReviews ] = useState([])
 
     // axios get for ride reviews
     const getReviews = async () => {
         const res = await axios.get(`http://localhost:3001/reviews/${props.id}`)
-        console.log(res)
+        setReviews(res.data.reviews)
     }
-
-
     // axios post for new reviews
-
     //use Effect for making axios calls for reviews when mounted:
     useEffect(() => {
         getReviews();
-        // return () => {
-        //     setRide({})
-        // }
-       }, [])  
-
-
-
+        
+       }, [])
     return (
-        <h1>Ride Reviews are linked!</h1>
+        reviews.map((review) => {
+            console.log(review)
+            return (
+                <div key={review._id}>
+                    <p className="review-title">{review.title}</p>
+                    <p className="review-rating">{review.rating}</p>
+                    <p className="review-description">{review.description}</p>
+                </div> 
+            )
+        })
     )
-
 }
-
 export default RideReviews
+
+
+
+
+
+
+
+
