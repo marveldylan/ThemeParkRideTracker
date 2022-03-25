@@ -6,7 +6,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
 .rush-logo {
   background: fixed;
   margin-top: 100px;
@@ -35,4 +34,75 @@ body {
   font-size: 20px;
   margin-top: -1px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.ride-details {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.ride-header {
+  text-align: center;
+  background-color: #a60303;
+  color: whitesmoke;
+}
+
+.details {
+  border: 2px solid gray;
+}
+
+.corner {
+  background-color: #a60303;
+}
+
+.ride-image {
+  padding-top: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+
+.ride-reviews {
+  text-align: center;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+.write-container {
+  height:20vh;
+  border: 1px solid gray;
+}
+
+.ride-description {
+  text-align: left;
+  padding: 0px 20px 0px 20px;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+}
+
+input {
+  margin: 5px 0px 5px 0px;
 }
