@@ -1,38 +1,38 @@
-.App {
+body {
   text-align: center;
+  background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/05/roller-coaster-07.jpg');
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.rush-logo {
+  background: fixed;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ride-name {
+  background-color: #a60303;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 10px;
   color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ride-status {
+  color: green;
+  background-color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 7px;
+  display: inline;
+  font-size: 20px;
+  margin-top: -1px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
