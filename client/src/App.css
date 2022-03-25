@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +14,75 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ride-details {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ride-header {
+  text-align: center;
+  background-color: #a60303;
+  color: whitesmoke;
 }
+
+.details {
+  border: 2px solid gray;
+}
+
+.corner {
+  background-color: #a60303;
+}
+
+.ride-image {
+  padding-top: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+
+.ride-reviews {
+  text-align: center;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+.current-wait {
+
+}
+
+.average-wait {
+
+}
+
+.min-height {
+
+}
+
+.ride-type {
+
+}
+
+.write-container {
+  height:20vh;
+  border: 1px solid gray;
+}
+
+.ride-description {
+  text-align: left;
+  padding: 0px 20px 0px 20px;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+}
+
+input {
+  margin: 5px 0px 5px 0px;
+}
+
+

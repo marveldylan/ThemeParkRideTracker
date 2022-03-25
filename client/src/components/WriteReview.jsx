@@ -45,6 +45,7 @@ const WriteReview = (props) => {
 
     return (
         <div className="review-form">
+            <h3>Write a review!</h3>
             <input 
                 type="text"
                 name="title"
@@ -63,7 +64,7 @@ const WriteReview = (props) => {
                 placeholder="Description" 
                 onChange={(e) => handleDescription(e, 'num')}
                 />
-            <button type="submit" onClick={() => submitReview()}>Submit</button>
+            <button className="submit-button" type="submit" onClick={() => submitReview()}>Submit</button>
         </div>
     )
 }
