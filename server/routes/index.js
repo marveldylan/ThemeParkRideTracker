@@ -6,6 +6,6 @@ const reviewController = require('../controllers/Review')
 
 router.get('/', rideController.getAllRides)
 router.get('/reviews/:id', reviewController.getAllReviews)
-router.post('/reviews/new', reviewController.createReview)
+router.post('/reviews/:id', reviewController.createReview)
 
 module.exports = router;
