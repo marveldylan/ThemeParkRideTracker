@@ -29,7 +29,8 @@ const createRides = async (reviews) => {
             averageWaitTime: 60,
             currentWaitTime: 70,
             status: 'open',
-            reviews: reviews._id
+            reviews: reviews._id,
+            image: "https://i.pinimg.com/736x/60/5b/93/605b931ec290ef64f83598810d111a25.jpg"
         },
         {
             name: 'Hulk Coaster',
@@ -39,7 +40,8 @@ const createRides = async (reviews) => {
             averageWaitTime: 45,
             currentWaitTime: 30,
             status: 'open',
-            reviews: reviews._id
+            reviews: reviews._id,
+            image: "https://upload.wikimedia.org/wikipedia/commons/9/90/The_Hulk_Coaster_%285143123646%29.jpg"
         },
         {
             name: 'Silver Star',
@@ -49,7 +51,8 @@ const createRides = async (reviews) => {
             averageWaitTime: 60,
             currentWaitTime: 55,
             status: 'open',
-            reviews: reviews._id
+            reviews: reviews._id,
+            image: "https://rcdb.com/aaaezqa"
         }
     
     ]

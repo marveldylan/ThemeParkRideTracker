@@ -10,9 +10,11 @@ const Ride = new Schema(
         averageWaitTime: { type: Number, required: true },
         currentWaitTime: { type: Number, required: true },
         status: { type: String, required: true},
-        reviews: [{ type: Schema.Types.ObjectId, ref: 'reviews' }]
+        reviews: [{ type: Schema.Types.ObjectId, ref: 'reviews' }],
+        image: { type: String, required: true}
     },
     { timestamps: true },
 )
 
 module.exports = mongoose.model('rides', Ride)
+// module.exports = Ride
