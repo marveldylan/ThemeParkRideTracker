@@ -20,12 +20,12 @@ const AllRides = () => {
     
     let navigate = useNavigate();
     const rideDetails = (ride) => {
-      navigate(`${ride._id}`)
+      navigate(`${ride._id}`)   
     }
 
     return (
         <div className="home">
-            <h1>RUSH</h1>
+            <img className='rush-logo' src="https://i.postimg.cc/V6cFhzhm/RUSH-red.png"/>
             <div className="rides">
                 {
                     rides.map((ride) => {

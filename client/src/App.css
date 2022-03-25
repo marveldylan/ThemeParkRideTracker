@@ -1,3 +1,41 @@
+body {
+  text-align: center;
+  background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/05/roller-coaster-07.jpg');
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.rush-logo {
+  background: fixed;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 500px;
+}
+
+.ride-name {
+  background-color: #a60303;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ride-status {
+  color: green;
+  background-color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 7px;
+  display: inline;
+  font-size: 20px;
+  margin-top: -1px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -50,22 +88,6 @@
   background-color: white;
 }
 
-.current-wait {
-
-}
-
-.average-wait {
-
-}
-
-.min-height {
-
-}
-
-.ride-type {
-
-}
-
 .write-container {
   height:20vh;
   border: 1px solid gray;
@@ -84,5 +106,3 @@
 input {
   margin: 5px 0px 5px 0px;
 }
-
-
