@@ -3,6 +3,7 @@ const routes = require('./routes');
 const db = require('./db');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const { urlencoded } = require('body-parser');
 
 
 // require() imports and middleware here ^ ///////
@@ -15,9 +16,11 @@ const app = express();
 
 app.use(cors())
 
-app.use('/', routes);
-
 app.use(bodyParser.json())
+
+app.use(urlencoded({required: false}))
+
+app.use('/', routes);
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
