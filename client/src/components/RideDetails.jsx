@@ -37,9 +37,13 @@ const RideDetails = () => {
 
 
     return (
-        <div className="detail">
-            <img src={selectedRide.image} alt={selectedRide.name} />
-            <div>
+        <div className="ride-details">
+            <div className="ride-header">
+                <h1 className="ride-name"> { selectedRide.name} </h1>
+            </div>
+            <div className="corner"/>
+            <div className="details">
+                <img className="ride-image" src={selectedRide.image} alt={selectedRide.name} />
                 <h3 className = "current-wait">Current Wait Time: {selectedRide.currentWaitTime} minutes</h3>
                 <h3 className = "average-wait">Average Wait Time: {selectedRide.averageWaitTime} minutes</h3>
                 <h3 className = "min-height">Minimum Height: {selectedRide.minHeight}"</h3>
@@ -47,10 +51,16 @@ const RideDetails = () => {
                 <h4 className = "ride-description">{selectedRide.description}</h4>
             </div>
             <div className="ride-reviews">
-                <WriteReview id = {id} rides = {rides} selectedRide = {selectedRide}/>
-                <RideReviews id = {id} rides = {rides} selectedRide = {selectedRide}/>
+                <h2>Ride Reviews</h2>
+                <div className="write-container">
+                    <WriteReview id = {id} rides = {rides} selectedRide = {selectedRide}/>
+                </div>
+                <div className="reviews-container">
+                    <h3>Previous Reviews</h3>
+                    <RideReviews id = {id} rides = {rides} selectedRide = {selectedRide}/>
+                </div>  
             </div>
-        </div> 
+        </div>
     )
 
 }

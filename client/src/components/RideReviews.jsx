@@ -28,6 +28,7 @@ const RideReviews = (props) => {
                 </div> 
             )
         })
+    
     )
 }
 export default RideReviews
